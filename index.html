@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lia Souza - Links Oficiais</title>
+    <!-- Importando as fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para os ícones nos botões -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root {
+            --azul-fundo: #1199AB;
+            --vermelho-botao: #CF4B32;
+            --branco: #FFFFFF;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--azul-fundo);
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        /* Caminho da Logo ajustado conforme o print da pasta */
+        .header-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .profile-name {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            color: var(--branco);
+            margin: 20px 0;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .links-wrapper {
+            padding: 0 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            background-color: var(--vermelho-botao);
+            color: var(--branco);
+            text-decoration: none;
+            padding: 18px 25px;
+            border-radius: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .link-item:hover {
+            transform: scale(1.03);
+        }
+
+        /* Ícones brancos e alinhados */
+        .link-item i {
+            font-size: 24px;
+            width: 35px;
+            text-align: left;
+        }
+
+        .link-text {
+            flex-grow: 1;
+            text-align: center;
+            margin-right: 35px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- O CAMINHO CORRETO: pasta 'imagem' e arquivo 'logo.png' -->
+        <img src="imagem/logo.png" alt="Lia Souza" class="header-image">
+
+        <h1 class="profile-name">Lia Souza</h1>
+
+        <div class="links-wrapper">
+            <!-- Botão Instagram -->
+            <a href="https://www.instagram.com/souza.lia24?igsh=NHd6MWM3bjEzMHlr" target="_blank" class="link-item">
+                <i class="fab fa-instagram"></i>
+                <span class="link-text">Instagram</span>
+            </a>
+
+            <!-- Botão Facebook -->
+            <a href="https://www.facebook.com/profile.php?id=61583362739909" target="_blank" class="link-item">
+                <i class="fab fa-facebook-f"></i>
+                <span class="link-text">Facebook</span>
+            </a>
+
+            <!-- Botão Fotos Sensuais com Coração -->
+            <a href="https://privacy.com.br/checkout/liasouzaoficial" target="_blank" class="link-item">
+                <i class="fas fa-heart"></i>
+                <span class="link-text">Fotos Sensuais</span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
